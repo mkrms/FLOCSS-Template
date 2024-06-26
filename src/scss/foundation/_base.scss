@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@use "mixin" as *;
+
+html {
+  font-size: calc(10 / 1440 * 100vw); //10px = 1rem
+
+  @include tb {
+    font-size: calc(10 / 768 * 100vw);
+  }
+
+  @include sp {
+    font-size: calc(10 / 390 * 100vw);
+  }
+
+  @include ov-pc {
+    font-size: 10px;
+  }
+}
+body {
+  overflow-x: hidden;
+}
+
+//ハーフレディング打ち消し
+h1,
+h2,
+h3,
+p,
+span,
+a {
+  margin-block: calc((1em - 1lh) / 2);
+}

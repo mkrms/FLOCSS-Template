@@ -1,0 +1,67 @@
+/*==============================
+
+responsive-none
+
+================================*/
+
+.pc-none {
+  @include ov-tb {
+    display: none !important;
+  }
+}
+
+.tb-none {
+  @include tb {
+    display: none !important;
+  }
+}
+
+.sp-none {
+  @include sp {
+    display: none !important;
+  }
+}
+
+/*==============================
+
+text-align
+
+================================*/
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+/*==============================
+
+display
+
+================================*/
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+/*==============================
+
+justify-content
+
+================================*/
+.j-between {
+  justify-content: space-between;
+}
+.j-center {
+  justify-content: center;
+}
+.j-end {
+  justify-content: flex-end;
+}

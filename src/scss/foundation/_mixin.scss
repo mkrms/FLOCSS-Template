@@ -1,0 +1,45 @@
+$BREAKPOINT_PC: 1440px;
+$BREAKPOINT_TB: 960px;
+$BREAKPOINT_SP: 768px;
+
+@mixin ov-pc {
+  @media screen and ($BREAKPOINT_PC <= width) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media screen and ($BREAKPOINT_PC > width) {
+    @content;
+  }
+}
+
+@mixin ov-tb {
+  @media screen and ($BREAKPOINT_TB <= width) {
+    @content;
+  }
+}
+
+@mixin tb {
+  @media screen and ($BREAKPOINT_TB > width) {
+    @content;
+  }
+}
+
+@mixin ov-sp {
+  @media screen and ($BREAKPOINT_SP <= width) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and ($BREAKPOINT_SP > width) {
+    @content;
+  }
+}
+
+/*==============================
+
+ハーフレディング計算用
+
+==============================*/
